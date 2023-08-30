@@ -10,7 +10,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	int rootDepth = 0, isPerfect = 0;
 
 	if (tree == NULL)
-		return (1);
+		return (0);
 	rootDepth = calculateDepth(tree);
 	isPerfect = isPerfectTree(tree, 0, rootDepth);
 
