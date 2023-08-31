@@ -14,7 +14,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	if (first == NULL || second == NULL)
 		return (NULL);
 	/*find root*/
-	if (first || second)
+	else if (first || second)
 		root = (binary_tree_t *)first;
 	while (root->parent)
 		root = root->parent;
